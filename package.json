@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node dist/index.js"
+    "run": "node dist/index.js",
+    "run-dev": "nodemon dist/index.js",
+    "test": "./node_modules/.bin/ts-mocha test/*.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.14"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "ts-mocha": "^1.0.3"
   }
 }
