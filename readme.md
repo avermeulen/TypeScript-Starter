@@ -29,12 +29,11 @@ You will need to install `mocha, ts-mocha and @types/mocha`
 Do it in this order.
 
 
-`
-
+```
 npm install --save-dev ts-mocha
 npm install --save-dev mocha
 npm install --save-dev @types/mocha
-`
+```
 
 Add a `test` entry to the `package.json` with a value like this: `./node_modules/.bin/ts-mocha test/*.ts`
 
