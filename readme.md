@@ -35,7 +35,9 @@ npm install --save-dev mocha
 npm install --save-dev @types/mocha
 ```
 
-Add a `test` entry to the `package.json` with a value like this: `./node_modules/.bin/ts-mocha test/*.ts`
+Add a `test` entry to the `package.json` with a value like this - replace the existing entry: 
+
+`test : ./node_modules/.bin/ts-mocha test/*.ts`
 
 
 ## Set node version using nvm
