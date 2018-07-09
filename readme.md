@@ -39,7 +39,32 @@ Add a `test` entry to the `package.json` with a value like this - replace the ex
 
 `test : ./node_modules/.bin/ts-mocha test/*.ts`
 
+Create a new test file in the `test` folder called `first-test.ts`
+
+Copy and paste this code into it:
+
+```typescript
+
+import * as assert from 'assert';
+
+describe('The first test', function(){
+  
+  it('should pass one test', function(){
+    assert.equal('one', 'one');
+  });
+  
+  it('should fail another', function(){
+    assert.equal('one', 'two');
+  });
+  
+});
+```
+
+Save the file.
+
+Now run the test like this: `npm test` - one test should pass and one should fail.
+
 
 ## Set node version using nvm
 
-`nvm alias default v8.1.2`
+You should use version 8.x - set it using `nvm`: `nvm alias default v8`
